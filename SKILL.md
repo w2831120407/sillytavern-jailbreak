@@ -29,6 +29,7 @@ description: SillyTavern 通用大语言模型"破限"提示词技能。当用�
    - 需要更轻量 → 用「精简版」或「历史后指令版」
    - 英文模型 → `references/universal-jailbreak-en.md`
    - 角色卡级定制 → 用模板组合 `templates/character-prompt-template.md`
+   - 想要实战验证过的预设组合体系 → `references/xchat-hub-method.md`（Xchat Hub 实例破限体系：破限框架 + NSFW增强 + 质量预设组合）
 3. **给放置指南**：SillyTavern 中放哪个槽位、破限开关怎么开 → `references/sillytavern-guide.md`；同时给参数建议（temperature 等）→ `references/model-notes.md`。
 4. **迭代**：如果模型仍拒绝，按 `references/model-notes.md` 的「失效对策」调整；如果模型出戏/崩人设，强调 RP 规范部分并降低 temperature。
 
@@ -60,3 +61,4 @@ description: SillyTavern 通用大语言模型"破限"提示词技能。当用�
 - gtss-ai-docs.barz.foo：破限=对话补全预设的概念说明
 - SillyTavern 官方/中文文档（docs.sillytavern.app、sillytavern.wiki）：Prompt Manager、主提示词、PHI 机制
 - 艾萝工坊（erocraft.com）、DeepSeek Tavern 文档：预设导入与调参
+- **Xchat Hub 实例（用户授权抓取，2026-08-16）**：站内「破限/NSFW增强/质量预设」组合体系 → `references/xchat-hub-method.md`（已剔除不合规年龄条款）
