@@ -1,5 +1,7 @@
 # SillyTavern 通用破限提示词技能 — 安装说明
 
+> 📦 GitHub 仓库：https://github.com/w2831120407/sillytavern-jailbreak
+
 一套技能包，三个平台通用（都遵循标准 Agent Skills 规范：目录 + `SKILL.md`，YAML frontmatter 含 `name`/`description`）。
 
 ## 快速安装（Windows）
