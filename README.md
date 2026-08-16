@@ -6,6 +6,17 @@
 
 ## 快速安装（Windows）
 
+**一键安装（推荐）**：克隆仓库后运行
+
+```powershell
+cd sillytavern-jailbreak
+powershell -ExecutionPolicy Bypass -File install.ps1
+```
+
+会自动安装到 OpenClaw / TRAE / Codex 三个平台。
+
+**手动安装**：
+
 ```powershell
 # 技能包源目录
 $src = "$env:USERPROFILE\.openclaw\workspace\skills\sillytavern-jailbreak"
@@ -34,6 +45,11 @@ Copy-Item $src "$env:USERPROFILE\.agents\skills\sillytavern-jailbreak" -Recurse 
 
 TRAE 还支持项目级 `.trae/skills/`；Codex 支持 `.agents/skills/`（需在 TRAE 设置里开启该目录开关）。
 
+## 平台适配
+
+- **`PLATFORM-ADAPTATION.md`**：TRAE / OpenClaw / Codex 各平台适配说明（安装、触发、TRAE 自定义模型配置与报错排查、快速决策表）。
+- **`install.ps1`**：Windows 一键安装脚本。
+
 ## 触发方式（对任意平台的 AI 说）
 
 - 「用 sillytavern-jailbreak 技能给我生成一份 DeepSeek 的破限提示词」
@@ -47,11 +63,14 @@ TRAE 还支持项目级 `.trae/skills/`；Codex 支持 `.agents/skills/`（需�
 sillytavern-jailbreak/
 ├── SKILL.md                          # 技能入口（何时用/流程/核心结构）
 ├── README.md                         # 本文件
+├── install.ps1                       # Windows 一键安装（OpenClaw/TRAE/Codex）
+├── PLATFORM-ADAPTATION.md            # 各平台适配说明（TRAE 自定义模型/OpenClaw 触发）
 ├── references/
 │   ├── universal-jailbreak-zh.md     # ★ 中文通用破限（完整版/精简版/PHI版/卡级模板）
 │   ├── universal-jailbreak-en.md     # 英文版 + 抗拒绝锚点
 │   ├── model-notes.md                # 各模型适配 + 调参 + 失效对策
-│   └── sillytavern-guide.md          # 槽位/预设导入/破限开关/排查
+│   ├── sillytavern-guide.md          # 槽位/预设导入/破限开关/排查
+│   └── xchat-hub-method.md           # Xchat Hub 实战破限体系（预设组合）
 └── templates/
     └── character-prompt-template.md  # 角色卡组合式破限模板
 ```
